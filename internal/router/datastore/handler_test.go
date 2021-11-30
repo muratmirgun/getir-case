@@ -2,11 +2,12 @@ package datastore
 
 import (
 	"bytes"
-	"getir-case/internal/store/inmemory"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
+
+	"github.com/muratmirgun/getir-case/internal/store/inmemory"
 )
 
 func TestGet(t *testing.T) {

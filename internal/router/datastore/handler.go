@@ -3,9 +3,10 @@ package datastore
 import (
 	"encoding/json"
 	"fmt"
-	"getir-case/model"
-	"getir-case/pkg"
 	"net/http"
+
+	"github.com/muratmirgun/getir-case/model"
+	"github.com/muratmirgun/getir-case/pkg"
 )
 
 func (d *DataStore) InMemory(w http.ResponseWriter, r *http.Request) {

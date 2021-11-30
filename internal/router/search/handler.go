@@ -2,11 +2,12 @@ package search
 
 import (
 	"encoding/json"
-	"getir-case/internal/store/mongodb"
-	"getir-case/model"
-	"getir-case/pkg"
 	"io/ioutil"
 	"net/http"
+
+	"github.com/muratmirgun/getir-case/internal/store/mongodb"
+	"github.com/muratmirgun/getir-case/model"
+	"github.com/muratmirgun/getir-case/pkg"
 
 	"go.mongodb.org/mongo-driver/bson"
 )

@@ -2,16 +2,17 @@ package main
 
 import (
 	"context"
-	"getir-case/internal/router/datastore"
-	"getir-case/internal/router/search"
-	"getir-case/internal/store/inmemory"
-	"getir-case/pkg"
 	"log"
 	"net/http"
 	"os"
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/muratmirgun/getir-case/internal/router/datastore"
+	"github.com/muratmirgun/getir-case/internal/router/search"
+	"github.com/muratmirgun/getir-case/internal/store/inmemory"
+	"github.com/muratmirgun/getir-case/pkg"
 )
 
 func main() {

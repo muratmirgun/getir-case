@@ -1,4 +1,4 @@
-module getir-case
+module github.com/muratmirgun/getir-case
 
 go 1.17
 

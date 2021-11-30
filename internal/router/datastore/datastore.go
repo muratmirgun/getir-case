@@ -1,7 +1,7 @@
 package datastore
 
 import (
-	"getir-case/internal/store"
+	"github.com/muratmirgun/getir-case/internal/store"
 )
 
 type DataStore struct {

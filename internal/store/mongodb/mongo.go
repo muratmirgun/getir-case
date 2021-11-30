@@ -3,11 +3,12 @@ package mongodb
 import (
 	"context"
 	"fmt"
-	"getir-case/internal/store"
-	"getir-case/model"
-	"getir-case/pkg"
 	"net/http"
 	"time"
+
+	"github.com/muratmirgun/getir-case/internal/store"
+	"github.com/muratmirgun/getir-case/model"
+	"github.com/muratmirgun/getir-case/pkg"
 
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"

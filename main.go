@@ -4,7 +4,6 @@ import (
 	"context"
 	"getir-case/internal/router/datastore"
 	"getir-case/internal/router/search"
-	"getir-case/internal/store"
 	"getir-case/internal/store/inmemory"
 	"getir-case/pkg"
 	"log"
@@ -20,8 +19,7 @@ func main() {
 	mongoServer := new(search.MongoDB)
 
 	// Initialize InMemory Store
-	var holder store.Store
-	holder = inmemory.New()
+	holder := inmemory.New()
 	dataHandler := datastore.New(holder)
 
 	// Initialize the Logger
@@ -72,5 +70,4 @@ func main() {
 	}
 
 	defer os.Exit(0)
-	return
 }

@@ -19,8 +19,8 @@ type mongodb struct {
 }
 
 func MongoInstance() store.DataManager {
-	Ctx, _ := context.WithTimeout(context.Background(), 10*time.Second)
-
+	Ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	defer cancel()
 	client, err := mongo.Connect(Ctx, options.Client().ApplyURI("mongodb+srv://challengeUser:WUMglwNBaydH8Yvu@challenge-xzwqd.mongodb.net/getir-case-study?retryWrites=true"))
 	if err != nil {
 		pkg.Panic(err)

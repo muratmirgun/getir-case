@@ -2,7 +2,6 @@ package datastore
 
 import (
 	"bytes"
-	"getir-case/internal/store"
 	"getir-case/internal/store/inmemory"
 	"net/http"
 	"net/http/httptest"
@@ -13,9 +12,7 @@ import (
 func TestGet(t *testing.T) {
 	wr := httptest.NewRecorder()
 
-	var holder store.Store
-
-	holder = inmemory.New()
+	holder := inmemory.New()
 
 	err := holder.Set("hi", "hello")
 	if err != nil {
@@ -44,9 +41,7 @@ func TestGet(t *testing.T) {
 func TestSet(t *testing.T) {
 	wr := httptest.NewRecorder()
 
-	var holder store.Store
-
-	holder = inmemory.New()
+	holder := inmemory.New()
 
 	dataHandler := New(holder)
 

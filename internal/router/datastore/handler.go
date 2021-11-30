@@ -30,7 +30,7 @@ func (d *DataStore) SetInMemory(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// Set Key-Value pair in memory
-	err = d.Set(input.Key, input.Value)
+	_ = d.Set(input.Key, input.Value)
 
 	// Return Response
 	w.WriteHeader(http.StatusCreated)

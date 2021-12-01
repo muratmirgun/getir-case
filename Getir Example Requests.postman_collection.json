@@ -34,17 +34,10 @@
 			],
 			"request": {
 				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"value": "text/plain",
-						"type": "text",
-						"disabled": true
-					}
-				],
+				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"startDate\": \"2016-01-21\",\n\t\"endDate\": \"2016-03-02\",\n\t\"minCount\": 2900,\n\t\"maxCount\": 3000\n}",
+					"raw": "{\n    \"startDate\": \"2016-01-26\",\n    \"endDate\": \"2018-02-02\",\n    \"minCount\": 2700,\n    \"maxCount\": 3000\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -52,10 +45,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/search",
+					"raw": "http://52.214.126.26:8080/search",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"52",
+						"214",
+						"126",
+						"26"
 					],
 					"port": "8080",
 					"path": [
@@ -115,10 +111,13 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/holder",
+					"raw": "http://52.214.126.26:8080/holder",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"52",
+						"214",
+						"126",
+						"26"
 					],
 					"port": "8080",
 					"path": [
@@ -160,20 +159,22 @@
 				"header": [
 					{
 						"key": "key",
-						"value": "hi",
+						"value": "li",
 						"type": "text"
 					}
 				],
 				"url": {
-					"raw": "http://localhost:8080/holder/get",
+					"raw": "http://52.214.126.26:8080/holder",
 					"protocol": "http",
 					"host": [
-						"localhost"
+						"52",
+						"214",
+						"126",
+						"26"
 					],
 					"port": "8080",
 					"path": [
-						"holder",
-						"get"
+						"holder"
 					],
 					"query": [
 						{

@@ -17,9 +17,8 @@ $ docker run -d -p 8080:8080 --name getir getir
 
 ## Handler Structure
 
-- `/search`
-- `/dataholder`
-- `/dataholder`
+- `/search  | http://52.214.126.26:8080/search`
+- `/holder | http://52.214.126.26:8080/holder`
 
 
 
